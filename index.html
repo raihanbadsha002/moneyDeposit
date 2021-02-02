@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Bank | Asia</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom Css    -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Login Area================ -->
+    <section class="container p-5" id="loginSection">
+        <h1 class="text-center pt-5 mt-4">Welcome To Bank Asia</h1>
+        <div class="submitArea shadow px-5 pt-5 pb-4 mt-5" style="border-radius: 10px;">
+            <h4>Login</h4>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button id="loginBtn" type="submit" class="btn btn-success">Enter</button>
+        </div>
+    </section>
+    <!-- Deposit Area================== -->
+    <section id="transaction-area" class="container p-5" style="display: none;">
+        <div class="row pt-5">
+            <div class="col-md-4 ">
+                <div class="deposit mx-4 my-2 text-white p-3 transactionBox">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="currentDeposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="withdraw mx-4 my-2 text-white p-3 transactionBox">
+                    <h5>Withdraw</h5>
+                    <h2>& <span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="balance mx-4 my-2 text-white p-3 transactionBox">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="currentBalance">1240</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submitArea shadow px-5 pt-5 pb-4 mt-5" style="border-radius: 10px;">
+                    <h4>Deposit</h4>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="AddDepositAmount" placeholder="$ amount you want to deposit">
+                    </div>
+                    <button id="DepositBtn" type="submit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submitArea shadow px-5 pt-5 pb-4 mt-5" style="border-radius: 10px;">
+                    <h4>Withdraw</h4>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="AddWithdrawAmount" placeholder="$ amount you want to withdraw">
+                    </div>
+                    <button id="WithdrawBtn" type="submit" class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
